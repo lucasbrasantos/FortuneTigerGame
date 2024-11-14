@@ -57,9 +57,9 @@
             this.moneyLabel.BackColor = System.Drawing.Color.Transparent;
             this.moneyLabel.Font = new System.Drawing.Font("Asia Tiger", 38F);
             this.moneyLabel.ForeColor = System.Drawing.Color.LimeGreen;
-            this.moneyLabel.Location = new System.Drawing.Point(465, 576);
+            this.moneyLabel.Location = new System.Drawing.Point(402, 576);
             this.moneyLabel.Name = "moneyLabel";
-            this.moneyLabel.Size = new System.Drawing.Size(381, 90);
+            this.moneyLabel.Size = new System.Drawing.Size(506, 90);
             this.moneyLabel.TabIndex = 0;
             this.moneyLabel.Text = "000";
             this.moneyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,6 +81,7 @@
             // upgrade1
             // 
             this.upgrade1.BackColor = System.Drawing.Color.Transparent;
+            this.upgrade1.IsBuyable = true;
             this.upgrade1.Location = new System.Drawing.Point(51, 97);
             this.upgrade1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.upgrade1.Name = "upgrade1";
@@ -94,6 +95,7 @@
             // upgrade2
             // 
             this.upgrade2.BackColor = System.Drawing.Color.Transparent;
+            this.upgrade2.IsBuyable = true;
             this.upgrade2.Location = new System.Drawing.Point(52, 222);
             this.upgrade2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.upgrade2.Name = "upgrade2";
@@ -107,6 +109,7 @@
             // upgrade3
             // 
             this.upgrade3.BackColor = System.Drawing.Color.Transparent;
+            this.upgrade3.IsBuyable = true;
             this.upgrade3.Location = new System.Drawing.Point(52, 346);
             this.upgrade3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.upgrade3.Name = "upgrade3";
@@ -120,6 +123,7 @@
             // upgrade4
             // 
             this.upgrade4.BackColor = System.Drawing.Color.Transparent;
+            this.upgrade4.IsBuyable = true;
             this.upgrade4.Location = new System.Drawing.Point(52, 471);
             this.upgrade4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.upgrade4.Name = "upgrade4";
@@ -133,6 +137,7 @@
             // upgrade5
             // 
             this.upgrade5.BackColor = System.Drawing.Color.Transparent;
+            this.upgrade5.IsBuyable = true;
             this.upgrade5.Location = new System.Drawing.Point(52, 596);
             this.upgrade5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.upgrade5.Name = "upgrade5";

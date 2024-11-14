@@ -12,7 +12,7 @@ namespace FortuneTigerGame.Forms
         private int _relativeDislocation = _growthFactor / 2;
 
         private User currentUser;
-        private int userBalance;
+        private long userBalance;
         private int clickMultiplier = 1;
         public static int SavedClickMultiplier = 1;
 
@@ -77,6 +77,14 @@ namespace FortuneTigerGame.Forms
         private void UpdateClickMultiplierLabel()
         {
             clickMultiplierLabel.Text = $"x{clickMultiplier}";
+            if (userBalance >= 0)
+            {
+                moneyLabel.ForeColor = Color.LimeGreen;
+            }
+            else
+            {
+                moneyLabel.ForeColor = Color.Red;
+            }
         }
 
         private void SetupUpgrades()

@@ -63,6 +63,13 @@ namespace FortuneTigerGame.Services
         {
             if (_backgroundTracks.ContainsKey(name))
             {
+
+                if (_currentBackgroundMusic != null && _currentBackgroundMusic == _backgroundTracks[name] && _currentBackgroundMusic.Position > TimeSpan.Zero)
+                {
+                     //If it's already playing, do nothing
+                    return;
+                }
+
                 _currentBackgroundMusic?.Stop();
                 _currentBackgroundMusic = _backgroundTracks[name];
                 _currentBackgroundMusic.Volume = 1.0;

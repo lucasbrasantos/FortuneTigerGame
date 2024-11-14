@@ -53,9 +53,9 @@
             // 
             this.quitButton.BackColor = System.Drawing.Color.Transparent;
             this.quitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.quitButton.Location = new System.Drawing.Point(980, 18);
+            this.quitButton.Location = new System.Drawing.Point(946, 203);
             this.quitButton.Name = "quitButton";
-            this.quitButton.Size = new System.Drawing.Size(50, 63);
+            this.quitButton.Size = new System.Drawing.Size(53, 63);
             this.quitButton.TabIndex = 2;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 

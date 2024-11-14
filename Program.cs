@@ -17,10 +17,10 @@ namespace FortuneTigerGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new WelcomeForm());
+            Application.Run(new WelcomeForm());
             //Application.Run(new LoginForm());
             //Application.Run(new LoreForm());
-            Application.Run(new MenuForm());
+            //Application.Run(new MenuForm());
         }
     }
 }

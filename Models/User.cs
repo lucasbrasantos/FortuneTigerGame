@@ -15,7 +15,7 @@ namespace FortuneTigerGame.Models
         public string Password { get; set; }
         public string Email { get; set; }
         public string CPF { get; set; }
-        public int Balance { get; set; }
+        public Int64 Balance { get; set; }
 
         private const int initialBalance = 1_000_000;
 
@@ -51,7 +51,7 @@ namespace FortuneTigerGame.Models
             CurrentUser = user;
         }
 
-        public void SetBalance(int balance)
+        public void SetBalance(long balance)
         {
             Balance = balance;
         }

@@ -9,8 +9,7 @@ namespace FortuneTigerGame.Forms
 {
     public partial class WelcomeForm : Form
     {
-        private SoundPlayer _backgroundMusic;
-        private SoundPlayer _gongSound;
+
         private Timer _timer;
 
         public WelcomeForm()

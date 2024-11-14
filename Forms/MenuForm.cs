@@ -1,4 +1,6 @@
 ﻿using FortuneTigerGame.Models;
+using FortuneTigerGame.Services;
+using System;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -10,7 +12,8 @@ namespace FortuneTigerGame.Forms
         
         public MenuForm()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            MusicPlayer.Instance.PlayBackgroundMusic("mainTheme");
 
             usernameLabel.Text = User.CurrentUser?.Name;
         }
@@ -32,12 +35,16 @@ namespace FortuneTigerGame.Forms
 
         private void minigamesButton_Click(object sender, System.EventArgs e)
         {
-
+            Random random = new Random();
+            MessageBox.Show($"{random.Next(0,2)}");
         }
 
         private void storeButton_Click(object sender, System.EventArgs e)
         {
-
+            StoreForm storeForm = new StoreForm();
+            this.Hide();
+            storeForm.ShowDialog();
+            this.Close();
         }
 
         private void button1_Click(object sender, System.EventArgs e)
